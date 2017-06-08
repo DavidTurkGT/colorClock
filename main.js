@@ -11,6 +11,9 @@ function getTime(){
   if (hour < 10){
     hour = "0" + hour;
   }
+  //To make the code 12 hour instead of 24 hour
+  // hour%=12;
+  // if(hour === 0 ){hour =12};
   //Get the minutes, format a 0 in front if < 10
   var min = now.getMinutes();
   if(min < 10){
